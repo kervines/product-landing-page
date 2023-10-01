@@ -1,6 +1,6 @@
 # Product Landing Page
 
-Esta landing page é o quarto projeto de certificação do [freecodecamp.org] (https://www.freecodecamp.org/).
+Esta landing page é o quarto projeto de certificação do (freecodecamp.org) [https://www.freecodecamp.org/].
 
 ## Esse projeto foi desenvolvido o protótipo em figma. (Sujeito a alterações na implementação)
 
