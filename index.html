@@ -27,14 +27,14 @@
         <h1>Bem-vindos, eu sou O DUQUE
           e vou lhes apresentar os melhores vinhos da minha adega!
         </h1>
-        <div class="slide-img">
-          <video id="video" src='./assets/video/video (1080p).mp4' width=" 570" height="360" controls>
+        <div class="video-container">
+          <video id="video" autoplay loop muted src='./assets/video/video (1080p).mp4' width=" 570" height="360">
           </video>
         </div>
       </div>
     </section>
     <section id="produto">
-      <h1>Produtos</h1>
+      <h1 class="title">Produtos</h1>
       <div class="container-produto">
         <div class="list-produto">
           <ul>
@@ -92,20 +92,30 @@
       </div>
     </section>
     <section id="sobre">
-      <h1>Sobre</h1>
+      <h1 class="title">Sobre</h1>
       <div class="sobre-container">
         <p>Nossa história começa com a paixão pelo vinho. Somos amantes dessa bebida que transcende o tempo, transportando-nos para as vinhas, as colheitas e as histórias que cada safra carrega consigo. Com o Duque, essa paixão se tornou nossa missão: compartilhar o amor pelos vinhos finos e proporcionar a você uma experiência verdadeiramente excepcional.</p>
         <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="brinde com vinho">
       </div>
     </section>
     <footer id="contato">
-      <h1>Contato</h1>
-      <form action="https://www.freecodecamp.com/email-submit" id="form">
-        <label for="email">Cadastre-se e aproveie nossas promoções</label>
-        <input type="email" name="email" id="email" placeholder="Digite seu email">
-        <input type="submit" value="CADASTRAR" id="submit">
-      </form>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nisi, atque ullam officiis ut sequi iusto neque iste quas quia repudiandae obcaecati vitae, reprehenderit totam corporis alias delectus laboriosam esse ipsum quod. Aliquam doloremque blanditiis excepturi facere nobis laborum quas dolor, ducimus, iusto quisquam placeat at perspiciatis possimus suscipit soluta amet consequatur. Dolor, officia a! Nesciunt necessitatibus nostrum doloremque molestias? Ea similique temporibus iure repudiandae quam modi blanditiis in ad quisquam omnis, pariatur quod voluptatem a alias deserunt maxime magni porro fugiat ratione provident delectus suscipit veritatis dolores odit? Odio reprehenderit culpa minus, architecto cum corrupti pariatur quas enim ut nam? Vitae impedit, ab quibusdam, in at alias veniam, corporis necessitatibus inventore blanditiis ut doloremque. Pariatur vitae beatae, itaque omnis temporibus, unde eius eos blanditiis veritatis aliquam, at similique dolore nihil placeat provident nostrum officiis eligendi excepturi eaque? Earum repudiandae reiciendis veritatis! Laudantium consequuntur fugit culpa aliquam accusantium libero quasi iste animi impedit, aspernatur, quisquam eius voluptatum rem. Eum, minus esse architecto cumque cum quasi velit ullam provident illum tenetur atque, exercitationem voluptatibus incidunt debitis iusto asperiores id omnis accusantium, officiis tempora eos deleniti cupiditate blanditiis. Ipsum, totam architecto? Optio sed iure aspernatur repellat impedit quod quaerat, suscipit eum facilis.</p>
+      <div class="container-contato">
+        <div class="social-media">
+          <h1>Kervin Espíritio Santo<span>.</span></h1>
+          <p>Frontend Developer <span>&</span> UI Designer</p>
+          <div class="social-link">
+            <a href="https://github.com/kervines" target="_blank"><img src="./assets/svg/github-alt.svg" alt="GitHub"></a>
+            <a href="https://www.instagram.com/kervin.es/" target="_blank"><img src="./assets/svg/instagram.svg" alt="Instagram"></a>
+            <a href="https://twitter.com/devKervines" target="_blank"><img src="./assets/svg/x-twitter.svg" alt="Twitter"></a>
+            <a href="mailto:dev.kervin@gmail.com"><img src="./assets/svg/envelope-regular.svg" alt="email"></a>
+          </div>
+        </div>
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+          <label for="email">Cadastre-se e aproveie nossas promoções</label>
+          <input type="email" name="email" id="email" placeholder="Digite seu email">
+          <input type="submit" value="CADASTRAR" id="submit">
+        </form>
+      </div>
     </footer>
   </main>
 </body>
