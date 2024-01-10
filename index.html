@@ -4,21 +4,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/styles.css">
+  <!-- <link rel="stylesheet" href="./css/styles.css"> -->
+  <link rel="stylesheet" href="./css/stylesV2.css">
   <title>O Duque</title>
 </head>
 
 <body>
   <header id="header">
     <div class="logo-header">
-      <img src="./assets/svg/1-logo.svg" alt="LOGO" id="header-img">
-      <a href="#">O Duque</a>
+      <img src="./assets/svg/1-logo.svg" width="50" height="50" alt="LOGO" id="header-img">
+      <h1><a href="#">O Duque</a></h1>
     </div>
     <nav id="nav-bar">
-      <a href="#home" class="nav-link">HOME</a>
-      <a href="#produto" class="nav-link">PRODUTOS</a>
-      <a href="#sobre" class="nav-link">SOBRE</a>
-      <a href="#contato" class="nav-link">CONTATO</a>
+      <ul>
+        <li><a href="#home" class="nav-link">HOME</a></li>
+        <li><a href="#produto" class="nav-link">PRODUTOS</a></li>
+        <li><a href="#sobre" class="nav-link">SOBRE</a></li>
+        <li><a href="#contato" class="nav-link">CONTATO</a></li>
+      </ul>
     </nav>
   </header>
   <main id="main">
@@ -28,63 +31,65 @@
           e vou lhes apresentar os melhores vinhos da minha adega!
         </h1>
         <div class="video-container">
-          <video id="video" autoplay loop muted src='./assets/video/video (1080p).mp4' width=" 570" height="360">
+          <video id="video" autoplay loop muted src='./assets/video/video (1080p).mp4' width="520" height="360">
           </video>
         </div>
       </div>
     </section>
     <section id="produto">
-      <h1 class="title">Produtos</h1>
       <div class="container-produto">
-        <div class="list-produto">
-          <ul>
-            <h2>TIPOS DE VINHO</h2>
-            <li>Tinto</li>
-            <li>Branco</li>
-            <li>Rosé</li>
-            <li>Espumante</li>
-          </ul>
-          <ul>
-            <h2>UVAS</h2>
-            <li>Merlot</li>
-            <li>Cabernet</li>
-            <li>Malbec</li>
-            <li>Touriga</li>
-          </ul>
-        </div>
-        <div class="destaque-produto">
-          <h2>Destaques da Semana</h2>
-          <div class="cards">
-            <div class="card-produto">
-              <img src="./assets/img-wine/esporao-private.jpg" alt="">
-              <figcaption>Esporão Private</figcaption>
-              <div class="compra">
-                <h3><span>R$</span>899,00</h3>
-                <button>COMPRAR</button>
+        <h1 class="title">Produtos</h1>
+        <div class="container-list-produto">
+          <div class="list-produto">
+            <ul>
+              <h2>TIPOS DE VINHO</h2>
+              <li>Tinto</li>
+              <li>Branco</li>
+              <li>Rosé</li>
+              <li>Espumante</li>
+            </ul>
+            <ul>
+              <h2>UVAS</h2>
+              <li>Merlot</li>
+              <li>Cabernet</li>
+              <li>Malbec</li>
+              <li>Touriga</li>
+            </ul>
+          </div>
+          <div class="destaque-produto">
+            <h2>Destaques da Semana</h2>
+            <div class="cards">
+              <div class="card-produto">
+                <img src="./assets/img-wine/esporao-private.jpg" alt="">
+                <figcaption>Esporão Private</figcaption>
+                <div class="preco">
+                  <p>R$<span>899,00</span></p>
+                  <button>COMPRAR</button>
+                </div>
               </div>
-            </div>
-            <div class="card-produto">
-              <img src="./assets/img-wine/taylor-10anos.jpg" alt="">
-              <figcaption>Porto Taylor's</figcaption>
-              <div class="compra">
-                <h3><span>R$</span>399,00</h3>
-                <button>COMPRAR</button>
+              <div class="card-produto">
+                <img src="./assets/img-wine/taylor-10anos.jpg" alt="">
+                <figcaption>Porto Taylor's</figcaption>
+                <div class="preco">
+                  <p>R$<span>399,00</span></p>
+                  <button>COMPRAR</button>
+                </div>
               </div>
-            </div>
-            <div class="card-produto">
-              <img src="./assets/img-wine/nuestro.jpg" alt="">
-              <figcaption>Nuestro</figcaption>
-              <div class="compra">
-                <h3><span>R$</span>129,90</h3>
-                <button>COMPRAR</button>
+              <div class="card-produto">
+                <img src="./assets/img-wine/nuestro.jpg" alt="">
+                <figcaption>Nuestro</figcaption>
+                <div class="preco">
+                  <p>R$<span>129,90</span></p>
+                  <button>COMPRAR</button>
+                </div>
               </div>
-            </div>
-            <div class="card-produto">
-              <img src="./assets/img-wine/4conti.jpg" alt="">
-              <figcaption>Quattro Conti</figcaption>
-              <div class="compra">
-                <h3><span>R$</span>99,00</h3>
-                <button>COMPRAR</button>
+              <div class="card-produto">
+                <img src="./assets/img-wine/4conti.jpg" alt="">
+                <figcaption>Quattro Conti</figcaption>
+                <div class="preco">
+                  <p>R$<span>99,00</span></p>
+                  <button>COMPRAR</button>
+                </div>
               </div>
             </div>
           </div>
