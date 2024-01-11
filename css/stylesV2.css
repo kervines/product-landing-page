@@ -1,0 +1,394 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+ul {
+  list-style: none;
+}
+section {
+  height: 100vh;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+/* red HEADER  */
+#header,
+#nav-bar ul,
+.logo-header {
+  display: flex;
+  align-items: center;
+}
+
+#header {
+  justify-content: space-between;
+  background-color: #772a4b;
+  padding: 20px 60px;
+}
+
+.logo-header {
+  gap: 10px;
+}
+
+.logo-header img {
+  transform: scaleX(-1);
+}
+
+#nav-bar ul {
+  gap: 20px;
+}
+
+#nav-bar ul li a {
+  background-color: #b24f79;
+  padding: 10px;
+}
+
+/* red HOME  */
+.container-home {
+  display: flex;
+  padding: 0px 200px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  gap: 50px;
+  position: relative;
+}
+.container-home::before {
+  content: '';
+  background-color: #b24f79;
+  width: 100%;
+  height: 450px;
+  position: absolute;
+  z-index: -1;
+}
+
+.container-home h1 {
+  text-align: center;
+}
+
+.container-home video {
+  object-fit: cover;
+}
+
+/* red PRODUTOS  */
+.container-produto {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.container-produto h1,
+.container h1 {
+  margin: 60px 40px;
+}
+.container-list-produto {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  position: relative;
+  padding: 20px 60px;
+  place-content: center;
+  height: 450px;
+}
+.container-list-produto::before {
+  content: '';
+  background-color: #b24f79;
+  width: 100%;
+  height: 450px;
+  position: absolute;
+  z-index: -1;
+}
+.list-produto,
+.list-produto ul {
+  display: flex;
+  flex-direction: column;
+}
+.list-produto {
+  gap: 50px;
+}
+.list-produto ul {
+  gap: 10px;
+}
+.list-produto ul li {
+  margin-left: 20px;
+}
+.destaque-produto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.card-produto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  padding: 20px 10px;
+  background-color: white;
+}
+.card-produto figcaption {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.card-produto img {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+}
+.preco {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.preco p {
+  font-size: 12px;
+  font-weight: bold;
+}
+.preco span {
+  font-size: 22px;
+}
+.preco button {
+  font-weight: bold;
+  border: none;
+  color: white;
+  background-color: #29a72e;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* red SOBRE */
+#sobre {
+  height: 70vh;
+}
+#sobre .container {
+  width: 100%;
+}
+.sobre-container {
+  padding: 0px 200px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.sobre-container p {
+  width: 500px;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: end;
+  letter-spacing: 1px;
+}
+.sobre-container img {
+  width: 600px;
+  height: 300px;
+  object-fit: cover;
+}
+/* red CONTATO */
+#contato {
+  height: 30vh;
+  background-color: #b24f79;
+  display: flex;
+  justify-content: center;
+}
+.container-contato {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.social-link a + a {
+  margin-left: 20px;
+}
+.social-link a img {
+  width: 25px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+#form label {
+  font-size: 18px;
+}
+#email {
+  padding: 5px;
+  font-size: 18px;
+  width: 400px;
+  border: none;
+}
+#submit {
+  border: none;
+  background-color: #772a4b;
+  color: white;
+  width: 200px;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px;
+}
+
+@media (max-width: 475px) {
+  section {
+    height: auto;
+  }
+  h1 {
+    font-size: 18px;
+  }
+  h2 {
+    font-size: 12px;
+  }
+  #header {
+    justify-content: center;
+    padding: 5px;
+  }
+  .logo-header img {
+    width: 40px;
+    transform: scaleX(-1);
+  }
+  #nav-bar {
+    display: none;
+  }
+
+  .container-home {
+    padding: 20px;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+  }
+  .container-home::before {
+    background-color: white;
+  }
+  .container-home video {
+    width: 360px;
+    height: 170px;
+  }
+  .list-produto {
+    gap: 20px;
+  }
+  .list-produto ul {
+    gap: 5px;
+  }
+  .list-produto ul li {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  .container-produto h1,
+  .container h1 {
+    margin: 10px 40px;
+  }
+  .container-list-produto {
+    padding: 20px 30px;
+    grid-template-columns: 100px 230px;
+    gap: 20px;
+    height: 250px;
+  }
+  .container-list-produto::before {
+    height: 250px;
+  }
+  .destaque-produto {
+    flex-direction: row;
+    overflow-y: scroll;
+  }
+  .destaque-produto h2 {
+    display: none;
+  }
+  .card-produto {
+    width: 120px;
+    padding: 10px;
+  }
+  .card-produto figcaption {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  .card-produto img {
+    width: 100px;
+    height: 100px;
+  }
+  .preco {
+    flex-direction: column;
+    gap: 2px;
+  }
+  .preco p {
+    font-size: 10px;
+    font-weight: bold;
+  }
+  .preco span {
+    font-size: 16px;
+  }
+  .preco button {
+    font-size: 10px;
+  }
+  #sobre {
+    height: auto;
+  }
+  .sobre-container {
+    display: block;
+    padding: 10px 50px 30px 50px;
+  }
+  .sobre-container p {
+    width: auto;
+    text-align: center;
+    font-size: 12px;
+  }
+  .sobre-container img {
+    display: none;
+  }
+
+  #contato {
+    height: auto;
+    padding: 20px;
+  }
+  .container-contato {
+    gap: 20px;
+    flex-direction: column-reverse;
+  }
+  #form {
+    flex-direction: row;
+    gap: 0px;
+    align-items: normal;
+  }
+  #form label {
+    display: none;
+    font-size: 12px;
+  }
+  #email {
+    font-size: 12px;
+    width: 200px;
+  }
+  #submit {
+    width: 100px;
+    font-size: 12px;
+    padding: 10px 5px;
+  }
+  .social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  .social-link a img {
+    width: 20px;
+  }
+}
