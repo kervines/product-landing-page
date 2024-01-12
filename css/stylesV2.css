@@ -1,3 +1,11 @@
+:root {
+  --bg-primary: #b24f79;
+  --bg-second: #772a4b;
+  --color-button: #29a72e;
+  --color-primary: #2f0f1e;
+  --color-second: #ffc1bf;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,10 +19,11 @@ body {
   width: 100%;
   height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-second);
 }
 a {
   text-decoration: none;
-  color: #000;
+  color: var(--color-primary);
 }
 ul {
   list-style: none;
@@ -28,6 +37,10 @@ section {
 
 h1 {
   font-size: 32px;
+  color: var(--color-primary);
+}
+h2 {
+  color: var(--color-primary);
 }
 
 /* red HEADER  */
@@ -40,7 +53,7 @@ h1 {
 
 #header {
   justify-content: space-between;
-  background-color: #772a4b;
+  background-color: var(--bg-primary);
   padding: 20px 60px;
 }
 
@@ -55,9 +68,9 @@ h1 {
 #nav-bar ul {
   gap: 20px;
 }
-
 #nav-bar ul li a {
-  background-color: #b24f79;
+  color: var(--color-second);
+  background-color: var(--bg-second);
   padding: 10px;
 }
 
@@ -73,7 +86,7 @@ h1 {
 }
 .container-home::before {
   content: '';
-  background-color: #b24f79;
+  background-color: var(--bg-primary);
   width: 100%;
   height: 450px;
   position: absolute;
@@ -108,7 +121,7 @@ h1 {
 }
 .container-list-produto::before {
   content: '';
-  background-color: #b24f79;
+  background-color: var(--bg-primary);
   width: 100%;
   height: 450px;
   position: absolute;
@@ -126,6 +139,7 @@ h1 {
   gap: 10px;
 }
 .list-produto ul li {
+  color: var(--color-primary);
   margin-left: 20px;
 }
 .destaque-produto {
@@ -172,7 +186,7 @@ h1 {
   font-weight: bold;
   border: none;
   color: white;
-  background-color: #29a72e;
+  background-color: var(--color-button);
   padding: 10px;
   cursor: pointer;
 }
@@ -197,6 +211,7 @@ h1 {
   line-height: 1.5;
   text-align: end;
   letter-spacing: 1px;
+  color: var(--color-primary);
 }
 .sobre-container img {
   width: 600px;
@@ -206,7 +221,7 @@ h1 {
 /* red CONTATO */
 #contato {
   height: 30vh;
-  background-color: #b24f79;
+  background-color: var(--bg-primary);
   display: flex;
   justify-content: center;
 }
@@ -234,14 +249,14 @@ h1 {
   font-size: 18px;
 }
 #email {
-  padding: 5px;
+  padding: 8px;
   font-size: 18px;
   width: 400px;
   border: none;
 }
 #submit {
   border: none;
-  background-color: #772a4b;
+  background-color: var(--bg-second);
   color: white;
   width: 200px;
   font-weight: bold;
@@ -278,7 +293,7 @@ h1 {
     justify-content: center;
   }
   .container-home::before {
-    background-color: white;
+    background-color: var(--color-second);
   }
   .container-home video {
     width: 360px;
