@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap');
+
 :root {
   --bg-primary: #b24f79;
   --bg-second: #772a4b;
@@ -21,12 +23,16 @@ html {
 body {
   width: 100%;
   height: 100vh;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   background-color: var(--color-second);
 }
 a {
   text-decoration: none;
   color: var(--color-primary);
+  font-family: 'Poppins', sans-serif;
+}
+button {
+  font-family: 'Poppins', sans-serif;
 }
 ul {
   list-style: none;
@@ -39,11 +45,13 @@ section {
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 28px;
   color: var(--color-primary);
+  font-family: 'Poppins', sans-serif;
 }
 h2 {
   color: var(--color-primary);
+  font-family: 'Poppins', sans-serif;
 }
 
 /* red HEADER  */
@@ -268,13 +276,14 @@ h2 {
   border: none;
   border-radius: var(--bd-radius);
   box-shadow: var(--shadow);
+  font-family: 'Poppins', sans-serif;
 }
 #submit {
+  font-family: 'Poppins', sans-serif;
   border: none;
   background-color: var(--bg-second);
   color: white;
   width: 200px;
-  font-weight: bold;
   font-size: 16px;
   padding: 10px;
   border-radius: var(--bd-radius);
